@@ -2,14 +2,14 @@
 ''' 
 '1' is for Stone
 '-1' is for Paper
-'0' is for Cissor
+'0' is for Scissor
 '''
 
 import random
 string = input("Enter your choice: ")
 yourmove = string.capitalize()
-dictionary = {"Stone": 1, "Paper":-1, "Cissor": 0}
-reversedict = {1: "Stone", -1: "Paper", 0: "Cissor"}
+dictionary = {"Stone": 1, "Paper":-1, "Scissor": 0}
+reversedict = {1: "Stone", -1: "Paper", 0: "Scissor"}
 
 computermove = random.choice([1,-1,0])
 print(f"Computer move is {reversedict[computermove]}\nYour move is {yourmove}")
